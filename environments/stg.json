@@ -1,0 +1,38 @@
+{
+  "us-east-1": {
+    "logLevel": "info",
+    "subnetNames": ["*_app3_az3", "*_app2_az2", "*_app1_az1"],
+    "metrics": true,
+    "lambdaRole": "dbp-sage-api-write-event",
+    "gatewayAPIName": "dbp-sage-api",
+    "gatewayRootResourcePath": "/sage/v1/events",
+    "authFunction": "dbp-sage-api-auth",
+    "awsAccountProps" : {
+      "gateway": {
+        "apiId" : "test",
+        "rootResourceId": "test"
+      }
+    },
+    "vpc": {
+      "subnets": "test"
+    }
+  },
+  "us-west-2": {
+    "logLevel": "info",
+    "subnetNames": ["*_app3_az3", "*_app2_az2", "*_app1_az1"],
+    "metrics": true,
+    "lambdaRole": "dbp-sage-api-write-event",
+    "gatewayAPIName": "dbp-sage-api",
+    "gatewayRootResourcePath": "/sage/v1/events",
+    "authFunction": "dbp-sage-api-auth",
+    "awsAccountProps" : {
+      "gateway": {
+        "apiId" : "test",
+        "rootResourceId": "test"
+      }
+    },
+    "vpc": {
+      "subnets": "test"
+    }
+  }
+}

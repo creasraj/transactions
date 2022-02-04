@@ -1,0 +1,32 @@
+{
+  "transactionId": {
+    "presence": {
+      "allowEmpty": false
+    },
+    "type": "string"
+  },
+  "orderId": {
+    "presence": {
+      "allowEmpty": false
+    },
+    "type": "string"
+  },
+  "merchantId": {
+    "presence": {
+      "allowEmpty": false
+    },
+    "type": "string"
+  },
+  "merchantType": {
+    "presence": {
+      "allowEmpty": false
+    },
+    "type": "string"
+  },
+  "value": {
+    "presence": {
+      "allowEmpty": false
+    },
+    "type": "number"
+  }
+}
