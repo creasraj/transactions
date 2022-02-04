@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "serverless offline start",
     "deploy": "serverless deploy",
-    "unit-test": "./node_modules/.bin/mocha \"tests/unit/**/*.ts\" --require ts-node/register",
-    "feature-test": "./node_modules/.bin/mocha \"tests/feature/**/*.ts\" --require ts-node/register  --require dotenv/config "
+    "unit-test": "./node_modules/.bin/mocha \"tests/**/*.ts\" --require ts-node/register"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^8.5.0",
@@ -42,7 +41,6 @@
     "prettier": "^2.2.1",
     "serverless-bundle": "^3.2.1",
     "serverless-dotenv-plugin": "^3.1.0",
-    "serverless-dynamodb-local": "^0.2.39",
     "serverless-offline": "^6.9.0"
   },
   "author": "Sidney Barrah",

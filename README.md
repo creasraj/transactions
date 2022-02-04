@@ -12,6 +12,11 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 
 # Serverless Framework Node HTTP API on AWS
 
+### Solutions
+
+1. Approach implemented in this solution takes input and aggregates them after validating for constraints.
+2. Other approaches include making using of redis cache. On each transaction, create an event with transaction details (on SQS), lambda would pull the event and perform the aggregation offline.
+
 ### Deployment
 
 ```
@@ -55,9 +60,13 @@ You can invoke your function locally by using the following command:
 It is also possible to emulate API Gateway and Lambda locally by using `serverless-offline` plugin. In order to do that, execute the following command:
 
 ```bash
-npm run dev
+ 1. npm run install
 
-post to http://localhost:3000/dev/transactions
+ 2. npm run dev
+
+ 3. post sample below to http://localhost:3000/dev/transactions
+ 
+ 4. To use filter on merchantType include queryString param like this - http://localhost:3000/dev/transactions?merchantType=test
 
 ```
 Input String
@@ -113,5 +122,5 @@ serverless offline
 
 ## Testing
 
-Tests are located in the `tests` folder an can be invoked by running `yarn unit-test` and `yarn feature-test`. These
+Tests are located in the `tests` folder an can be invoked by running `npm run unit-test`. These
 tests will invoke the defined  actions in a wrapper, where the response can then be tested.

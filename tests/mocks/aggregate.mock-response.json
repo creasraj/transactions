@@ -1,0 +1,14 @@
+[
+  {
+    "merchantId": "User1",
+    "gross": 246,
+    "net": 246,
+    "average": 123
+  },
+  {
+    "merchantId": "User2",
+    "gross": 123,
+    "net": 123,
+    "average": 123
+  }
+]

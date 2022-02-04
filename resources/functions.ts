@@ -1,7 +1,7 @@
 "use strict";
 export default {
     transactions: {
-        handler: 'src/transactions/handler.aggregate',
+        handler: 'src/handlers/handler.aggregate',
         events: [
             {
                 http: {
