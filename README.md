@@ -59,6 +59,9 @@ Which should result in response similar to the following (removed `input` conten
 You can invoke your function locally by using the following command:
 It is also possible to emulate API Gateway and Lambda locally by using `serverless-offline` plugin. In order to do that, execute the following command:
 
+# Curl command 
+curl -d '{json}' -H 'Content-Type: application/json' http://localhost:3000/dev/transactions
+
 ```bash
  1. npm run install
 
